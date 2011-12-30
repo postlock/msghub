@@ -1,0 +1,13 @@
+{application,msghub,
+             [{description,"MsgHub"},
+              {vsn,"0.01"},
+              {registered,[]},
+              {applications,[kernel,stdlib]},
+              {mod,{sockjs_app,[]}},
+              {env,[]},
+              {modules,[
+                    msghub_app,
+                    msghub_session_handler,
+                    msghub_session,
+                    msghub_session_sup
+                    ]}]}.
