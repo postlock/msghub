@@ -3,11 +3,11 @@
               {vsn,"0.01"},
               {registered,[]},
               {applications,[kernel,stdlib]},
-              {mod,{sockjs_app,[]}},
+              {mod,{msghub_app,[]}},
               {env,[]},
               {modules,[
-                    msghub_app,
-                    msghub_session_handler,
-                    msghub_session,
-                    msghub_session_sup
+                    msghub_app,                 % application module
+                    msghub_session_handler,     % handles session events
+                    msghub_sup,                 % application supervisor
+                    msghub_listener             % code for starting/stopping listeners
                     ]}]}.
